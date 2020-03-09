@@ -21,6 +21,9 @@ Table Button{
 .mainContent{  
     width: 70%x;
 }
+.mainContent a{  
+   margin-left: 10px;
+}
 .mainContent Table td,th{  
     color: black;
     font-weight: bold;

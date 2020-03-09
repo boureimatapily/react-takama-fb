@@ -27,16 +27,18 @@ class Home extends Component {
                 
                       
                 <Container>
-                <a onClick={this.props.logoutUser}><Button>Logout</Button></a>
-                   <AddAccount />
+               <br/> <a onClick={this.props.logoutUser}><Button>Deconnexion</Button></a>
+               <Link to="/add"><Button>Ajouter un Voyage</Button></Link>
                    
                     <Row>
                         <Col lg={{offset: 2 }} >
                         <Table striped bordered hover size="sm">
                 <thead>
                     <tr>
-                        <th>User Name</th>   
-                        <td>PAID</td>             
+                        <th>Nom</th>   
+                        <td>Depart</td> 
+                        <td>Arriver</td> 
+                        <td>Date</td>             
                     </tr>
                 </thead>
                 <tbody>
@@ -44,27 +46,30 @@ class Home extends Component {
                 {
                 this.props.account.map(count=>{
                     return (
-                    <tr>
+                <tr>
                         <td>{count.userName}</td>
-                        <td> { <Form.Control type="checkbox" name="maincheckbox" id="maincheckbox" />}</td>
+                        <td>{count.depart}</td>
+                        <td>{count.arrival}</td>
+                        <td>{count.date}</td>
                      
-                    <td>
+                        <td>
+                            {<Button  variant="secondary" >
+                            <Link to={"/edit/" + count.id}>  <img src={pencil} /> </Link>   
+                            </Button>}
+                                    
+                            {<Button variant="secondary"  onClick={()=>this.deleteAccounts(count.id)}>                
+                            <img src={trash}  />
+                            </Button> }
 
-                   
-                         
-                                {<Button  variant="secondary" >
-                                         <Link to={"/edit/" + count.id}>  <img src={pencil} /> </Link>
-                                       
-                                    </Button>}
-                                   
-                                    {<Button variant="secondary"  onClick={()=>this.deleteAccounts(count.id)}>                
-                                    <img src={trash}  />
-                                    </Button>
-                                                 }
-                                   
-                            
-                                </td>
-                    </tr>
+                            {<Button variant="success" >                
+                            ANNULER
+                            </Button> }
+
+                            {<Button variant="success" >                
+                            PAIEMENT
+                            </Button> }
+                        </td>
+                 </tr>
                     )
                 })
                 }
