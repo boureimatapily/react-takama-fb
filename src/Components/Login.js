@@ -24,7 +24,7 @@ class Login extends Component {
          <Container>
                     <Row>
 
-                        <Col lg={{ offset: 3 }} >
+                        <Col lg={{ offset: 3 }} ><br/>
                             <Form onSubmit={this.handleSubmit}>
                                 <Form.Group as={Row} controlId="email">
                                     <Form.Label column lg={2}>
