@@ -12,9 +12,11 @@ class Navbar extends Component {
         <Container>
             <Row>
                 <Col>
-                <Button variant="primary"><Link to="/">Home</Link></Button>
-                <Button variant="primary"><Link to="/login">Log in</Link></Button>
-                <Button variant="primary"><Link to="/signup">Sign Up</Link></Button>
+                <Button variant="primary"><Link to="/">Acceuil / Home</Link></Button>
+                <Button variant="primary"><Link to="/infos">Voyage</Link></Button>
+                <Button variant="primary"><Link to="/contact">Contact</Link></Button>
+                <Button variant="primary"><Link to="/login">Connexion / Log in</Link></Button>
+                <Button variant="primary"><Link to="/signup">Inscription / Sign Up</Link></Button>
 
                 </Col>
             </Row>
