@@ -3,14 +3,14 @@ import 'firebase/firestore'
 import 'firebase/auth'
 
 const Config = {
-  apiKey: "AIzaSyDss5CB4GzWYs3Q2IZFbwLY-nVOhni54HA",
-  authDomain: "susumarket-422e3.firebaseapp.com",
-  databaseURL: "https://susumarket-422e3.firebaseio.com",
-  projectId: "susumarket-422e3",
-  storageBucket: "susumarket-422e3.appspot.com",
-  messagingSenderId: "903857271492",
-  appId: "1:903857271492:web:a311c75f69f2c8a46a4f91"
-};
+          apiKey: "AIzaSyCVIz6adEp_I7ffWB2G4_2IjDeuh51pLxw",
+          authDomain: "takama-db64a.firebaseapp.com",
+          databaseURL: "https://takama-db64a.firebaseio.com",
+          projectId: "takama-db64a",
+          storageBucket: "takama-db64a.appspot.com",
+          messagingSenderId: "973704212252",
+          appId: "1:973704212252:web:c2927424a47dae365c94d9"
+    };
   firebase.initializeApp(Config);
   firebase.firestore().settings({ timestampsInSnapshots: true})
 
