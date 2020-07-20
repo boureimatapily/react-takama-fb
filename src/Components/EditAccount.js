@@ -1,5 +1,5 @@
 import React from 'react'
-import { Form, Col, Row, Container, Button, Table } from 'react-bootstrap'
+import { Form, Col, Row, Container, Button } from 'react-bootstrap'
 import { connect } from 'react-redux'
 import {  editAccount } from './redux/actions/CatActions'
 import { Link } from 'react-router-dom'
@@ -18,7 +18,7 @@ class EditAccount extends React.Component {
             num:event.target.elements.num.value,
 
         }
-        this.props. editAccount(account)
+        this.props.editAccount(account)
         this.props.history.push('/')
     }
 

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import { connect} from 'react-redux'
 import { deleteAccount, getAllAccounts } from './redux/actions/CatActions'
 import { logoutUser  } from './redux/actions/authActions';
-import AddAccount from './AddAccount'
+// import AddAccount from './AddAccount'
 
 
 class Home extends Component {
@@ -27,7 +27,7 @@ class Home extends Component {
                 
                       
                 <Container>
-               <br/> <a onClick={this.props.logoutUser}><Button>Deconnexion</Button></a>
+               <br/><Button onClick={this.props.logoutUser}>Deconnexion</Button>
                <Link to="/add"><Button>Ajouter un Voyage</Button></Link>
                    
                     <Row>
@@ -54,11 +54,11 @@ class Home extends Component {
                      
                         <td>
                             {<Button  variant="secondary" >
-                            <Link to={"/edit/" + count.id}>  <img src={pencil} /> </Link>   
+                            <Link to={"/edit/" + count.id}>  <img src={pencil} alt="pencil" /> </Link>   
                             </Button>}
                                     
                             {<Button variant="secondary"  onClick={()=>this.deleteAccounts(count.id)}>                
-                            <img src={trash}  />
+                            <img src={trash}  alt="trash" />
                             </Button> }
 
                             {<Button variant="success" >                
