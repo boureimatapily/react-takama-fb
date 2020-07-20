@@ -1,7 +1,7 @@
 import React from 'react';
 import Home from './Components/Home';
 import AddAccount from './Components/AddAccount';
-import { Link, BrowserRouter, Route, Switch } from 'react-router-dom'
+import {BrowserRouter, Route, Switch } from 'react-router-dom'
 import EditAccount from './Components/EditAccount';
 import Login from './Components/Login';
 import Signup from './Components/Signup';

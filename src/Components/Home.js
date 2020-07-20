@@ -1,11 +1,7 @@
 import React, { Component } from 'react'
 import pencil from './icons/icons/pencil.svg'
 import trash from './icons/icons/trash.svg'
-<<<<<<< HEAD
-import {  Col, Row, Container, Button, Table } from 'react-bootstrap'
-=======
-import { Form, Col, Row, Container, Button, Table } from 'react-bootstrap'
->>>>>>> 6ebf34dec12c1e5831edf46189cf39416f6a8d2e
+import {Col, Row, Container, Button, Table } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { connect} from 'react-redux'
 import { deleteAccount, getAllAccounts } from './redux/actions/CatActions'

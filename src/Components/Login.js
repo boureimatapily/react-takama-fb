@@ -1,9 +1,5 @@
 import React, { Component } from 'react'
-<<<<<<< HEAD
-import { Form, Col, Row, Container, Button } from 'react-bootstrap'
-=======
-import { Form, Col, Row, Container, Button, Table } from 'react-bootstrap'
->>>>>>> 6ebf34dec12c1e5831edf46189cf39416f6a8d2e
+import { Form, Col, Row, Container, Button} from 'react-bootstrap'
 import { authenticateUser, authenticateWithGoogle } from './redux/actions/authActions';
 import { connect } from 'react-redux';
 

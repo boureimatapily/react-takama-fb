@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
-import { Form, Col, Row, Container, Button, Table } from 'react-bootstrap'
+import { Form, Col, Row, Container, Button} from 'react-bootstrap'
 import { createNewUser } from './redux/actions/authActions';
 
 class Signup extends Component {

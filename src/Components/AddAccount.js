@@ -1,14 +1,8 @@
 import React from 'react'
-<<<<<<< HEAD
-import { Form, Col, Row, Container, Button } from 'react-bootstrap'
+import { Form, Col, Row, Container, Button} from 'react-bootstrap'
 import { connect} from 'react-redux'
 import   {addNewAccount}  from './redux/actions/CatActions'
-=======
-import { Form, Col, Row, Container, Button, Table } from 'react-bootstrap'
-import { connect} from 'react-redux'
-import   {addNewAccount}  from './redux/actions/CatActions'
-import { bindActionCreators } from 'redux'
->>>>>>> 6ebf34dec12c1e5831edf46189cf39416f6a8d2e
+// import { bindActionCreators } from 'redux'
 import { Link } from 'react-router-dom'
 
 class AddAccount extends React.Component{
