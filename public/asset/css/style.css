@@ -1,0 +1,47 @@
+
+.d-flex Button{ 
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+Table Button{ 
+    margin-right: 10px;
+    background-color: blue;
+}
+.NavContent{
+    margin-top: 80px;
+    margin-left: 11%;
+}
+.NavContent a {
+   color: white;
+   font-weight: bolder;
+} 
+.NavContent Button{
+  margin-right: 5px;
+ }
+.mainContent{  
+    width: 70%x;
+}
+.mainContent a{  
+   margin-left: 10px;
+}
+.mainContent Table td,th{  
+    color: black;
+    font-weight: bold;
+}
+.headerContent{
+    background-color: rgb(219, 219, 219);
+    width: 70%;
+    height: 50%;
+    margin-left: 15%;
+}
+#maincheckbox{
+    display: inline-block;
+    list-style: none;
+}
+#btnlogsignup{
+   margin-left: 50%;
+}
+
+
+
+
